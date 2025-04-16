@@ -57,8 +57,8 @@ const SymbolsPage: FC<SymbolsPageProps> = ({ symbols }) => {
   // 获取网格布局样式
   const getGridStyle = (category: string) => {
     // 对于ASCII艺术使用更宽松的布局
-    if (category.includes('小房子') || category.includes('ASCII')) {
-      return 'grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3 gap-2 md:gap-4';
+    if (category === 'house') {
+      return 'grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2 gap-4 md:gap-6';
     }
     
     // 对于Lenny Face和其他特殊符号使用中等布局
